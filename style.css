@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0b16;
+    color: white;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #1a1a1d;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #fbbd24;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #fbbd24;
+    text-align: center;
+    padding: 60px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    padding: 12px 25px;
+    background-color: #0d0b16;
+    color: #fbbd24;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta:hover {
+    background-color: #fbbd24;
+    color: #0d0b16;
+}
+
+/* Seções */
+section {
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+section p, section ul {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Estilo exclusivo para a seção de contato */
+.contato-section {
+    background-color: #1a1a1d;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo dos links dentro da seção de contato */
+.contato-section a {
+    color: #fbbd24;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contato-section a:hover {
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a1a1d;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVIDADE PARA TELAS MENORES */
+@media (max-width: 1024px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .cta {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+}
